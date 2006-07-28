@@ -2,14 +2,14 @@
 %define		module	pycups
 
 Summary:	Set of Python bindings for the CUPS API
-Summary(pl):	Zbiór wi±zañ Pythona do API CUPS-a
+Summary(pl.UTF-8):	ZbiÃ³r wiÄ…zaÅ„ Pythona do API CUPS-a
 Name:		python-%{module}
-Version:	1.9.10
+Version:	1.9.12
 Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://cyberelk.net/tim/data/pycups/pycups-%{version}.tar.bz2
-# Source0-md5:	68dd09934424127ca35d05bf6b6c5db7
+# Source0-md5:	c853b55286216568f14dde8a5ae21a21
 BuildRequires:	cups-devel >= 1.2.1
 BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	rpm-pythonprov
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 pycups is a set of Python bindings for the CUPS API.
 
-%description -l pl
-pycups to zbiór wi±zañ Pythona do API CUPS-a.
+%description -l pl.UTF-8
+pycups to zbiÃ³r wiÄ…zaÅ„ Pythona do API CUPS-a.
 
 %prep
 %setup -q -n %{module}-%{version}
