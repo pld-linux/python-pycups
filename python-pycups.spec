@@ -4,12 +4,12 @@
 Summary:	Set of Python bindings for the CUPS API
 Summary(pl.UTF-8):	Zbiór wiązań Pythona do API CUPS-a
 Name:		python-%{module}
-Version:	1.9.12
-Release:	2
+Version:	1.9.22
+Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://cyberelk.net/tim/data/pycups/pycups-%{version}.tar.bz2
-# Source0-md5:	c853b55286216568f14dde8a5ae21a21
+# Source0-md5:	b430eaf0b7d74f0330eb49d2866e5cea
 BuildRequires:	cups-devel >= 1.2.1
 BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	rpm-pythonprov
