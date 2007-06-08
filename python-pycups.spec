@@ -4,14 +4,15 @@
 Summary:	Set of Python bindings for the CUPS API
 Summary(pl.UTF-8):	Zbiór wiązań Pythona do API CUPS-a
 Name:		python-%{module}
-Version:	1.9.22
+Version:	1.9.23
 Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://cyberelk.net/tim/data/pycups/pycups-%{version}.tar.bz2
-# Source0-md5:	b430eaf0b7d74f0330eb49d2866e5cea
+# Source0-md5:	fcfe25039e83d086af0614bf59331561
+Patch0:		%{name}-size_t.patch
 BuildRequires:	cups-devel >= 1.2.1
-BuildRequires:	python-devel >= 1:2.3
+BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -24,9 +25,10 @@ pycups to zbiór wiązań Pythona do API CUPS-a.
 
 %prep
 %setup -q -n %{module}-%{version}
+%patch0 -p1
 
 %build
-CFLAGS="%{rpmcflags}"
+CFLAGS="-DVERSION=\\\"%{version}\\\" %{rpmcflags}"
 export CFLAGS
 python setup.py build
 
@@ -45,3 +47,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc NEWS ChangeLog
 %attr(755,root,root) %{py_sitedir}/*.so
+%attr(755,root,root) %{py_sitedir}/*.egg-info
