@@ -1,0 +1,11 @@
+--- pycups-1.9.23/cupsconnection.c.wiget	2007-06-08 23:23:16.000000000 +0200
++++ pycups-1.9.23/cupsconnection.c	2007-06-08 23:25:08.000000000 +0200
+@@ -2070,7 +2070,7 @@ Connection_adminSetServerSettings (Conne
+ {
+   PyObject *dict, *key, *val;
+   int num_settings = 0;
+-  int pos = 0;
++  Py_ssize_t pos = 0;
+   cups_option_t *settings = NULL;
+   if (!PyArg_ParseTuple (args, "O", &dict))
+     return NULL;
