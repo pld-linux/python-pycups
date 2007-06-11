@@ -47,4 +47,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc NEWS ChangeLog
 %attr(755,root,root) %{py_sitedir}/*.so
-%attr(755,root,root) %{py_sitedir}/*.egg-info
+%{py_sitedir}/*.egg-info
