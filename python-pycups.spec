@@ -10,6 +10,7 @@ License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://cyberelk.net/tim/data/pycups/pycups-%{version}.tar.bz2
 # Source0-md5:	6f8fd2a5d8690ad2c0619f2aac52179e
+URL:		http://cyberelk.net/tim/software/pycups/
 BuildRequires:	cups-devel >= 1.2.1
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
