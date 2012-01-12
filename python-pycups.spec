@@ -4,12 +4,12 @@
 Summary:	Set of Python bindings for the CUPS API
 Summary(pl.UTF-8):	Zbiór wiązań Pythona do API CUPS-a
 Name:		python-%{module}
-Version:	1.9.56
+Version:	1.9.60
 Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://cyberelk.net/tim/data/pycups/pycups-%{version}.tar.bz2
-# Source0-md5:	fe1ec1531e52465da3859724dcab96df
+# Source0-md5:	083f3dd657df986e712a6fae36427457
 URL:		http://cyberelk.net/tim/software/pycups/
 BuildRequires:	cups-devel >= 1.2.1
 BuildRequires:	python-devel >= 1:2.5
