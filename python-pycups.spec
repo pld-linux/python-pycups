@@ -7,12 +7,12 @@
 Summary:	Set of Python 2 bindings for the CUPS API
 Summary(pl.UTF-8):	Zbiór wiązań Pythona 2 do API CUPS-a
 Name:		python-%{module}
-Version:	1.9.68
+Version:	1.9.69
 Release:	1
 License:	GPL v2+
 Group:		Development/Languages/Python
 Source0:	http://cyberelk.net/tim/data/pycups/pycups-%{version}.tar.bz2
-# Source0-md5:	eae8a0a3cb0925eb6b1db8cb4645f3a3
+# Source0-md5:	51f70a94b56c01dbf1085fa819e3e1d8
 URL:		http://cyberelk.net/tim/software/pycups/
 BuildRequires:	cups-devel >= 1.2.1
 BuildRequires:	epydoc
@@ -110,7 +110,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python2}
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog NEWS README TODO
+%doc NEWS README TODO
 %attr(755,root,root) %{py_sitedir}/cups.so
 %{py_sitedir}/pycups-%{version}-py*.egg-info
 %endif
@@ -118,7 +118,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python3}
 %files -n python3-pycups
 %defattr(644,root,root,755)
-%doc ChangeLog NEWS README TODO
+%doc NEWS README TODO
 %attr(755,root,root) %{py3_sitedir}/cups.cpython-*.so
 %{py3_sitedir}/pycups-%{version}-py*.egg-info
 %endif
