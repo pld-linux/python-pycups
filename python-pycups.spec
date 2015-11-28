@@ -8,7 +8,7 @@ Summary:	Set of Python 2 bindings for the CUPS API
 Summary(pl.UTF-8):	Zbiór wiązań Pythona 2 do API CUPS-a
 Name:		python-%{module}
 Version:	1.9.73
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Development/Languages/Python
 Source0:	http://cyberelk.net/tim/data/pycups/pycups-%{version}.tar.bz2
