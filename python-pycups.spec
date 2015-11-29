@@ -14,6 +14,7 @@ Group:		Development/Languages/Python
 Source0:	http://cyberelk.net/tim/data/pycups/pycups-%{version}.tar.bz2
 # Source0-md5:	ee0e7204d7a2ae942e2f4c4508afdbfb
 URL:		http://cyberelk.net/tim/software/pycups/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	cups-devel >= 1.2.1
 BuildRequires:	epydoc
 %if %{with python2}
